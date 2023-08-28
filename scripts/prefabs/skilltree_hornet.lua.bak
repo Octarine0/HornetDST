@@ -1,0 +1,23 @@
+local ORDERS =
+{
+    {"silk",           { -214+18   , 176 + 30 }},
+    {"needle",         { -62       , 176 + 30 }},
+    {"charms",           { 66+18     , 176 + 30 }},
+    {"allegiance",      { 204       , 176 + 30 }},
+}
+
+local function BuildSkillsData(SkillTreeFns)
+    local skills = 
+    {
+        
+    }
+
+    return {
+        SKILLS = skills,
+        ORDERS = ORDERS,
+    }
+end
+
+--------------------------------------------------------------------------------------------------
+
+return BuildSkillsData

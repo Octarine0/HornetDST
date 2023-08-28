@@ -38,8 +38,11 @@ Assets = {
     Asset( "ATLAS", "images/names_gold_hornet.xml" ),
 	
 	Asset("FONT", "fonts/talkingfont_hornet.zip"),
+	
+	Asset("SCRIPT", "scripts/prefabs/skilltree_hornet.lua"),
 }
 
+local SkillTreeDefs = require("prefabs/skilltree_defs")
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
 AddSimPostInit(function()
@@ -150,6 +153,23 @@ local skin_modes = {
 
 -- Needed because programming is weird like that. Otherwise the item would be invisible
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE.hneedle1 = {atlas = "images/inventoryimages/hneedle1.xml", image = "hneedle1.tex" }
+
+--SkillTree
+local CreateSkillTree = function()
+	--print("Skilltree gen for Hornet")
+	local BuildSkillsData = require("prefabs/skilltree_hornet") -- Load in the skilltree
+
+    if BuildSkillsData then
+        local data = BuildSkillsData(SkillTreeDefs.FN)
+
+        if data then
+            SkillTreeDefs.CreateSkillTreeFor("hornet", data.SKILLS)
+            SkillTreeDefs.SKILLTREE_ORDERS["hornet"] = data.ORDERS
+			--print("Skilltree generated for Hornet.")
+        end
+    end
+end
+CreateSkillTree();
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("hornet", "FEMALE", skin_modes)
