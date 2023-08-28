@@ -11,12 +11,12 @@ return {
         },
         BUILD =
         {
-            MOUNTED = "I can't place that from way up here.",
-            HASPET = "I won't abandon my pet for another.",
+            MOUNTED = "I'm too high up to reach that that.", --Customised
+            HASPET = "I won't abandon my pet for another.", --Customised
         },
 		SHAVE =
 		{
-			AWAKEBEEFALO = "Shaving the beast will not be possible while it's awake.",
+			AWAKEBEEFALO = "Shaving the beast will not be possible while it's awake.", --Customised
 			GENERIC = "I can't shave that!",
 			NOBITS = "There is nothing left to shave.",
             REFUSE = "only_used_by_woodie",
@@ -26,8 +26,8 @@ return {
 		{
 			GENERIC = "There's no space in here.",
 			NOTALLOWED = "That does not belong in there.",
-			INUSE = "I shall wait.",
-            NOTMASTERCHEF = "My talents as a chef fall short of those required for this.",
+			INUSE = "I shall wait.", --Customised
+            NOTMASTERCHEF = "My talents as a chef are insufficient for this task.", --Customised
 		},
         CONSTRUCT =
         {
@@ -61,9 +61,9 @@ return {
 		},
         COOK =
         {
-            GENERIC = "I can't cook right now.",
-            INUSE = "Looks like we had the same idea.",
-            TOOFAR = "It's too far away!",
+            GENERIC = "This is not the time for cooking.",
+            INUSE = "That's already in use.",
+            TOOFAR = "I can't reach.",
         },
         START_CARRAT_RACE =
         {
@@ -97,8 +97,8 @@ return {
             DEAD = "This would be wasted on this one.",
             SLEEPING = "Perhaps when they wake.",
             BUSY = "I'll try again in a second.",
-            ABIGAILHEART = "Fate appears to have other plans for you.",
-            GHOSTHEART = "A second chance is rare, use it well.",
+            ABIGAILHEART = "Fate appears to have other plans for you.", --Customised
+            GHOSTHEART = "A second chance is rare, use it well.", --Customised
             NOTGEM = "I'm not sticking that in there!",
             WRONGGEM = "This gem won't work here.",
             NOTSTAFF = "It's not quite the right shape.",
@@ -125,8 +125,8 @@ return {
         },
         GIVETOPLAYER =
         {
-            FULL = "This would be more than you can carry.",
-            DEAD = "This would be wasted on this one.",
+            FULL = "This would be more than you can carry.", --Customised
+            DEAD = "This would be wasted on this one.", --Customised
             SLEEPING = "I'll give them this when they wake.",
             BUSY = "I'll wait till they're done.",
         },
@@ -140,11 +140,11 @@ return {
         WRITE =
         {
             GENERIC = "I think it's fine as is.",
-            INUSE = "There's only room for one scribbler.",
+            INUSE = "I should exercise patience.", --Customised
         },
         DRAW =
         {
-            NOIMAGE = "This'd be easier if I had the item in front of me.",
+            NOIMAGE = "Without a reference, I don't have the skill.", --Customised
         },
         CHANGEIN =
         {
@@ -362,24 +362,24 @@ return {
 
 	ANNOUNCE_BEES = "Small creatures with vicious stings.",
 	ANNOUNCE_BOOMERANG = "My timing was off.",
-	ANNOUNCE_CHARLIE = "The shadows come for me.",
-	ANNOUNCE_CHARLIE_ATTACK = "Vicious shade.",
+	ANNOUNCE_CHARLIE = "The shadows come for me.", --Customised
+	ANNOUNCE_CHARLIE_ATTACK = "Vicious shade.", --Customised
 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific
 	ANNOUNCE_COLD = "So cold!",
 	ANNOUNCE_HOT = "Need... ice... or... shade!",
 	ANNOUNCE_CRAFTING_FAIL = "I'm missing a couple key ingredients.",
-	ANNOUNCE_DEERCLOPS = "I sense my next challenge approaching. Will I have the strength to see it through?",
-	ANNOUNCE_CAVEIN = "What beast could cause that?",
+	ANNOUNCE_DEERCLOPS = "I sense my next challenge approaching. Will I have the strength to see it through?", --Customised
+	ANNOUNCE_CAVEIN = "What beast could cause that?", --Customised
 	ANNOUNCE_ANTLION_SINKHOLE =
 	{
-		"What beast could cause that?",
-		"I should seek out the cause...",
+		"What beast could cause that?", --Customised
+		"I should seek out the cause...", --Customised
 	},
 	ANNOUNCE_ANTLION_TRIBUTE =
 	{
         "Allow me to pay tribute.",
-        "A tribute for you, great Antlion.",
-        "That'll appease it, for now...",
+        "My pride as a warrior may suffer, but the beast is pacified.", --Customised
+        "The beast is sated, for now at least...", --Customised
 	},
 	ANNOUNCE_SACREDCHEST_YES = "I guess I'm worthy.",
 	ANNOUNCE_SACREDCHEST_NO = "It didn't like that.",
@@ -433,15 +433,15 @@ return {
     ANNOUNCE_SNARED = "Sharp! Sharp bones!!",
     ANNOUNCE_SNARED_IVY = "Help! The garden is fighting back!",
     ANNOUNCE_REPELLED = "It's shielded!",
-	ANNOUNCE_ENTER_DARK = "I must escape this darkness!",
+	ANNOUNCE_ENTER_DARK = "I must escape this darkness!", --Customised
 	ANNOUNCE_ENTER_LIGHT = "I can see again!",
 	ANNOUNCE_FREEDOM = "I'm free! I'm finally free!",
 	ANNOUNCE_HIGHRESEARCH = "I feel so smart now!",
-	ANNOUNCE_HOUNDS = "I sense an my next trial is near.",
+	ANNOUNCE_HOUNDS = "I sense an my next trial is near.", --Customised
 	ANNOUNCE_WORMS = "Did you feel that?",
 	ANNOUNCE_HUNGRY = "I'm so hungry!",
-	ANNOUNCE_HUNT_BEAST_NEARBY = "This track is fresh. The beast must be nearby.",
-	ANNOUNCE_HUNT_LOST_TRAIL = "The beast's trail ends here.",
+	ANNOUNCE_HUNT_BEAST_NEARBY = "This track is fresh. The beast must be nearby.", --Customised
+	ANNOUNCE_HUNT_LOST_TRAIL = "The beast's trail ends here.", --Customised
 	ANNOUNCE_HUNT_LOST_TRAIL_SPRING = "This wet soil can't hold a footprint.",
 	ANNOUNCE_INV_FULL = "I can't carry any more stuff!",
 	ANNOUNCE_KNOCKEDOUT = "Ugh, my head!",
@@ -764,16 +764,16 @@ return {
 
 	DESCRIBE =
 	{
-		MULTIPLAYER_PORTAL = "The door that brought me to this forsaken land.",
-        MULTIPLAYER_PORTAL_MOONROCK = "The door that brought me to this forsaken land, though it has been altered.",
-        MOONROCKIDOL = "I will not worship this false idol.",
-        CONSTRUCTION_PLANS = "Stuff for science!",
+		MULTIPLAYER_PORTAL = "The door that brought me to this forsaken land.", --Customised
+        MULTIPLAYER_PORTAL_MOONROCK = "The door that brought me to this forsaken land, though it has been altered.", --Customised
+        MOONROCKIDOL = "I will not worship this false idol.", --Customised?
+        CONSTRUCTION_PLANS = "Stuff for science!", 
 
         ANTLION =
         {
-            GENERIC = "Should I appease this beast, or face it head on?",
-            VERYHAPPY = "This beast seems to favour me for now...",
-            UNHAPPY = "A foul beast in a foul mood.",
+            GENERIC = "Should I appease this beast, or face it head on?", --Customised
+            VERYHAPPY = "This beast seems to favour me for now...", --Customised
+            UNHAPPY = "A foul beast in a foul mood.", --Customised
         },
         ANTLIONTRINKET = "Someone might be interested in this.",
         SANDSPIKE = "I could've been skewered!",
@@ -832,6 +832,15 @@ return {
             GHOST = "%s, only pity for your cursed kind.",
             FIRESTARTER = "So you've decided on fire as your answer, %s.",
         },
+		HOLLOWKNIGHT = --I DON'T KNOW IF THIS WORKS
+        {
+			GENERIC = "Again we meet little ghost.",
+			ATTACKER = "Come no closer, ghost.",
+			MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
+			REVIVER = "Once again you give me hope little ghost.",
+			GHOST = "You were born of the abyss. Now it seems you have returned to it.",
+			FIRESTARTER = "Get that fire started %s.",
+		},
         WILSON = --finished, could use work
         {
             GENERIC = "Will you survive this ordeal scientist?",
@@ -916,11 +925,11 @@ return {
             ATTACKER = "One such as you will not suvive such aggression.",
             MURDERER = "Have I underestimated you %s? I shall end you now.",
             REVIVER = "Though you may have changed my fate, I fear yours is inevitable.", --this one's tough
-            GHOST = 
-			{ 
-			 "Fate is cruel to the weaker among us...",
-			 "I feel no sadness in this weakling's demise",
-			}, --I think I may dislike wes too much...
+            GHOST = "I feel no sadness in this weakling's demise",
+			--{ 
+			 --"Fate is cruel to the weaker among us...",
+			 --"I feel no sadness in this weakling's demise",
+			--}, --I think I may dislike wes too much...
             FIRESTARTER = "That fire seems real %s.", --maybe
         },
         WEBBER = --unstarted
