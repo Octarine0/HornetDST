@@ -38,7 +38,7 @@ local function fn()
 	inst.entity:SetPristine()
 
 	inst:AddComponent("weapon")
-    inst.components.weapon:SetDamage(65)
+    inst.components.weapon:SetDamage(60)
 
 	inst:AddComponent("inspectable")        
 	inst:AddComponent("inventoryitem")  

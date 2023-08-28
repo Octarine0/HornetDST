@@ -191,7 +191,23 @@ local TECH = GLOBAL.TECH
 
 Recipe("hneedle1", {Ingredient("marble", 1), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle1.xml", "hneedle1.tex")
 Recipe("hneedle2", {Ingredient("marble", 10), Ingredient("silk", 10)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
-Recipe("hneedle3", {Ingredient("spiderhat", 1), Ingredient("thulecite", 2), Ingredient("silk", 20)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+Recipe("hneedle3", {Ingredient("spiderhat", 1), Ingredient("thulecite", 2), Ingredient("silk", 10)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+
+STRINGS.RECIPE_DESC.HNEEDLE1 = "Bright and fancy."
+STRINGS.RECIPE_DESC.HNEEDLE2 = "Bright and fancy."
+STRINGS.RECIPE_DESC.HNEEDLE3 = "Bright and fancy."
+
+AddRecipeToFilter("hneedle1", "WEAPONS")
+AddRecipeToFilter("hneedle2", "WEAPONS")
+AddRecipeToFilter("hneedle3", "WEAPONS")
+
+AddRecipeToFilter("hneedle1", "CHARACTER")
+AddRecipeToFilter("hneedle2", "CHARACTER")
+AddRecipeToFilter("hneedle3", "CHARACTER")
+
+AddRecipeToFilter("hneedle1", "MODS")
+AddRecipeToFilter("hneedle2", "MODS")
+AddRecipeToFilter("hneedle3", "MODS")
 
 TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
 TUNING.HORNET_SANITY = GetModConfigData("HORNET_SANITY")
