@@ -69,4 +69,4 @@ local function fn()
 	return inst
 end
 
-return Prefab("common/inventory/hneedle1", fn, assets, prefabs)
+return Prefab("common/inventory/hneedle3", fn, assets, prefabs)
