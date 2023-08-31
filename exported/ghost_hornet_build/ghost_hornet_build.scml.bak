@@ -86,7 +86,7 @@
 			</mainline>
 			<timeline id="0" name="ghost_eyes">
 				<key id="0" time="0" spin="1">
-					<object folder="1" file="0" x="6.75" y="401.749" scale_x="1" scale_y="1" angle="1.76473" />
+					<object folder="1" file="0" x="6.75" y="401.749" scale_x="0.999894" scale_y="0.999894" angle="1.76473" />
 				</key>
 			</timeline>
 			<timeline id="1" name="ghost_tail">
