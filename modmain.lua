@@ -113,27 +113,43 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET =
 	GHOST = "A lost soul.",
 }
 
-STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Maybe works? 
+STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = --Seems to work... probably? 
 {
-	GENERIC = "Test String 1 from willow.",
-	ATTACKER = "Test String Attack from willow.",
-	MURDERER = "Test String murder from willow.",
+	GENERIC = "Hi %s!",
+	ATTACKER = "You seem a little prickly today %s.",
+	MURDERER = "Prepare for imolation murderer.", --this needs changed, but for now
 	REVIVER = "%s reignited my flame.",
-	GHOST = "Test String Ghost from willow.",
+	GHOST = "Ghosts don't catch well... Better get a heart.",
+	FIRESTARTER = "Get that fire started %s.",
 }
+
+--TUNING.HORNET_CHARM = GetModConfigData("HORNET_CHARM")
 
 --Hollow knight mod examine text cross compat
 if HollowKnightPresent then
-	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT =
+	STRINGS.CHARACTERS.HORNET.DESCRIBE.HOLLOWKNIGHT = --all this may not be required. The new speech file may do it already.
 	{
 		GENERIC = "Again we meet little ghost.",
 		ATTACKER = "Come no closer, ghost.",
 		MURDERER = "I will not stand idle little ghost. Your actions must be stopped.",
 		REVIVER = "Once again you give me hope little ghost.",
 		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
-	}
+		FIRESTARTER = "Get that fire started %s.",
+	},
+	--STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = -- all this code doesn't work. Priority registering issue I think. Not sure. Will look in to.
+	--{
+		--GENERIC = "...",
+		--ATTACKER = "...",
+		--MURDERER = "...",
+		--REVIVER = "...",
+		--GHOST = "...",
+		--FIRESTARTER = "...",
+	--},
+	--if TUNING.HORNET_CHARM == "crenabled" or "enabled" then
+		--Maybe add the ability to use h knight charms? Would need to add the slot...
+	--end
+	print("Hornet Got this far")
 end
-
 
 -- The character's name as appears in-game 
 STRINGS.NAMES.HORNET = "Hornet"
@@ -193,6 +209,29 @@ local Ingredient = GLOBAL.Ingredient
 local Recipe = GLOBAL.Recipe
 local TECH = GLOBAL.TECH
 
-Recipe("hneedle1", {Ingredient("flint", 1), Ingredient("marble", 1), Ingredient("silk", 4)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle1.xml", "hneedle1.tex")
-Recipe("hneedle2", {Ingredient("flint", 1), Ingredient("marble", 2), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
-Recipe("hneedle3", {Ingredient("flint", 1), Ingredient("marble", 3), Ingredient("silk", 8)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+Recipe("hneedle1", {Ingredient("marble", 1), Ingredient("silk", 6)}, RECIPETABS.WAR, TECH.SCIENCE_ONE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle1.xml", "hneedle1.tex")
+Recipe("hneedle2", {Ingredient("marble", 10), Ingredient("silk", 10)}, RECIPETABS.WAR, TECH.SCIENCE_TWO, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+Recipe("hneedle3", {Ingredient("spiderhat", 1), Ingredient("thulecite", 2), Ingredient("silk", 10)}, RECIPETABS.WAR, TECH.MAGIC_THREE, nil, nil, nil, nil, "ishornet", "images/inventoryimages/hneedle2.xml", "hneedle2.tex")
+
+STRINGS.RECIPE_DESC.HNEEDLE1 = "Bright and fancy."
+STRINGS.RECIPE_DESC.HNEEDLE2 = "Bright and fancy."
+STRINGS.RECIPE_DESC.HNEEDLE3 = "Bright and fancy."
+
+AddRecipeToFilter("hneedle1", "WEAPONS")
+AddRecipeToFilter("hneedle2", "WEAPONS")
+AddRecipeToFilter("hneedle3", "WEAPONS")
+
+AddRecipeToFilter("hneedle1", "CHARACTER")
+AddRecipeToFilter("hneedle2", "CHARACTER")
+AddRecipeToFilter("hneedle3", "CHARACTER")
+
+AddRecipeToFilter("hneedle1", "MODS")
+AddRecipeToFilter("hneedle2", "MODS")
+AddRecipeToFilter("hneedle3", "MODS")
+
+TUNING.HORNET_HEALTH = GetModConfigData("HORNET_HEALTH")
+TUNING.HORNET_SANITY = GetModConfigData("HORNET_SANITY")
+TUNING.HORNET_HUNGER = GetModConfigData("HORNET_HUNGER")
+TUNING.HORNET_MOVESPEED = GetModConfigData("HORNET_MOVESPEED")
+TUNING.HORNET_DAMAGEMULT = GetModConfigData("HORNET_DAMAGEMULT")
+--TUNING.HORNET_FONT = GetModConfigData("HORNET_FONT")

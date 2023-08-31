@@ -6,6 +6,7 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.HORNET =
 	MURDERER = "Test String murder.",
 	REVIVER = "Test String revive.",
 	GHOST = "A lost soul.",
+	FIRESTARTER = "Get that fire started %s.",
 }
 --Wolfgang
 STRINGS.CHARACTERS.WOLFGANG.DESCRIBE.HORNET = 
@@ -37,11 +38,12 @@ STRINGS.CHARACTERS.WX78.DESCRIBE.HORNET =
 --Willow
 STRINGS.CHARACTERS.WILLOW.DESCRIBE.HORNET = 
 {
-	GENERIC = "That mask's kind of creepy.",
-	ATTACKER = "Test String Attack.",
-	MURDERER = "Test String murder.",
-	REVIVER = "Test String revive.",
-	GHOST = "A lost soul.",
+	GENERIC = "Hi %s!",
+	ATTACKER = "You seem a little prickly today %s.",
+	MURDERER = "Prepare for imolation murderer.", --this needs changed, but for now
+	REVIVER = "%s reignited my flame.",
+	GHOST = "Ghosts don't catch well... Better get a heart.",
+	FIRESTARTER = "Get that fire started %s.",
 }
 --Wendy
 STRINGS.CHARACTERS.WENDY.DESCRIBE.HORNET = 

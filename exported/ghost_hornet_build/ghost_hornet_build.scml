@@ -44,10 +44,10 @@
 		<file id="40" name="ghost_FX/ghost_FX-40.png" width="52" height="28" pivot_x="7.98315" pivot_y="-3.78568" />
 	</folder>
 	<folder id="1" name="ghost_eyes">
-		<file id="0" name="ghost_eyes/ghost_eyes-0.png" width="250" height="250" pivot_x="0.515197" pivot_y="0.613101" />
-		<file id="1" name="ghost_eyes/ghost_eyes-1.png" width="250" height="250" pivot_x="0.515197" pivot_y="0.613101" />
-		<file id="2" name="ghost_eyes/ghost_eyes-2.png" width="250" height="250" pivot_x="0.515197" pivot_y="0.613101" />
-		<file id="3" name="ghost_eyes/ghost_eyes-3.png" width="250" height="250" pivot_x="0.515197" pivot_y="0.613101" />
+		<file id="0" name="ghost_eyes/ghost_eyes-0.png" width="250" height="250" pivot_x="0.255197" pivot_y="1.2" />
+		<file id="1" name="ghost_eyes/ghost_eyes-1.png" width="250" height="250" pivot_x="0.255197" pivot_y="1.2" />
+		<file id="2" name="ghost_eyes/ghost_eyes-2.png" width="250" height="250" pivot_x="0.255197" pivot_y="1.2" />
+		<file id="3" name="ghost_eyes/ghost_eyes-3.png" width="250" height="250" pivot_x="0.255197" pivot_y="1.2" />
 	</folder>
 	<folder id="2" name="ghost_body">
 		<file id="0" name="ghost_body/ghost_body-0.png" width="360" height="352" pivot_x="0.515346" pivot_y="0.699859" />
@@ -86,7 +86,7 @@
 			</mainline>
 			<timeline id="0" name="ghost_eyes">
 				<key id="0" time="0" spin="1">
-					<object folder="1" file="0" x="6.75" y="401.749" scale_x="0.999894" scale_y="0.999894" angle="1.76473" />
+					<object folder="1" file="0" x="6.75" y="401.749" scale_x="1" scale_y="1" angle="1.76473" />
 				</key>
 			</timeline>
 			<timeline id="1" name="ghost_tail">
