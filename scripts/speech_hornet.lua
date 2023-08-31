@@ -24,7 +24,7 @@ return {
 		},
 		STORE =
 		{
-			GENERIC = "There's no space in here.",
+			GENERIC = "Perhaps I should make some space first.",  --Customised
 			NOTALLOWED = "That does not belong in there.",
 			INUSE = "I shall wait.", --Customised
             NOTMASTERCHEF = "My talents as a chef are insufficient for this task.", --Customised
@@ -40,7 +40,7 @@ return {
 		{
 			GENERIC = "I can't do that.",
 			INUSE = "They're elbow deep in junk right now.",
-            NOTMASTERCHEF = "I'm not a fancy enough chef for that.",
+            NOTMASTERCHEF = "I don't have the skills for this.",
 		},
 		UNLOCK =
         {
@@ -93,9 +93,9 @@ return {
 
         GIVE =
         {
-            GENERIC = "That doesn't belong there.",
-            DEAD = "This would be wasted on this one.",
-            SLEEPING = "Perhaps when they wake.",
+            GENERIC = "That doesn't belong there.",  --Customised
+            DEAD = "This would be wasted on this one.",  --Customised
+            SLEEPING = "Perhaps when they wake.",  --Customised
             BUSY = "I'll try again in a second.",
             ABIGAILHEART = "Fate appears to have other plans for you.", --Customised
             GHOSTHEART = "A second chance is rare, use it well.", --Customised
