@@ -1,7 +1,7 @@
 name = "Hornet"
-description = "A character template for Don't Starve Together."
-author = "Pyrotech95 & The Deadly Cow"
-version = "0.1.0" -- First number is major version, second number minor version. The third number represents bugfix versions
+description = "Hornet from hollow knight finds her way into the constant."
+author = "Octarine & The Deadly Cow"
+version = "1.0.0" -- First number is major version, second number minor version. The third number represents bugfix versions
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
