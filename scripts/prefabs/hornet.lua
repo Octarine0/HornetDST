@@ -54,6 +54,10 @@ local function onload(inst)
     end
 end
 
+local function OnSave(inst, data)
+    -- data.gears_eaten = inst._gears_eaten
+end
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Battle sanity mechanics. All WIP
 local function onEndHornetComfort(receiver, comforterGUID, comfortAuraUID) -- Mostly done I think... Who knows.
