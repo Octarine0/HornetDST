@@ -39,7 +39,9 @@ Assets = {
 	
 	Asset("FONT", "fonts/talkingfont_hornet.zip"),
 	
-	Asset("SCRIPT", "scripts/prefabs/skilltree_hornet.lua"),
+	Asset( "IMAGE", "images/hornet_skilltree.tex" ),
+    Asset( "ATLAS", "images/hornet_skilltree.xml" ),
+	Asset( "SCRIPT", "scripts/prefabs/skilltree_hornet.lua"),
 }
 
 local SkillTreeDefs = require("prefabs/skilltree_defs")
@@ -171,6 +173,15 @@ local skin_modes = {
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE.hneedle1 = {atlas = "images/inventoryimages/hneedle1.xml", image = "hneedle1.tex" }
 
 --SkillTree
+local OldGetSkilltreeBG = GLOBAL.GetSkilltreeBG
+function GLOBAL.GetSkilltreeBG(imagename, ...)
+    if imagename == "hornet_background.tex" then
+        return "images/hornet_skilltree.xml"
+    else
+        return OldGetSkilltreeBG(imagename, ...)
+    end
+end
+
 local CreateSkillTree = function()
 	--print("Skilltree gen for Hornet")
 	local BuildSkillsData = require("prefabs/skilltree_hornet") -- Load in the skilltree
