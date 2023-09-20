@@ -38,6 +38,7 @@ local function fn()
 	inst.entity:SetPristine()
 	
 	inst:AddComponent("weapon")
+	inst:AddTag("hornet_needle")
     inst.components.weapon:SetDamage(50)
 
 	inst:AddComponent("inspectable")        
