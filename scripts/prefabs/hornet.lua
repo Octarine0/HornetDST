@@ -2,6 +2,7 @@ local MakePlayerCharacter = require "prefabs/player_common"
 
 local assets = {
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
+	Asset("SCRIPT", "scripts/prefabs/skilltree_hornet.lua"),
 }
 
 --Hornet's stats. Static method incase I break something in the config
@@ -135,6 +136,12 @@ end
 
 --The End of WIP
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- for checking what hornet has killed
+--inst:ListenForEvent("killed",onkilled)
 
 
 -- This initializes for both the server and client. Tags can be added here.
