@@ -55,9 +55,9 @@ local function onload(inst)
     end
 end
 
-local function OnSave(inst, data)
+--local function OnSave(inst, data)
     -- data.gears_eaten = inst._gears_eaten
-end
+--end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --Battle sanity mechanics. All WIP
@@ -134,6 +134,19 @@ local function onEnemyAttackHornet() -- Definitely not done
 	-- The other of the two triggering conditions... I wonder if I could make these a single function. Maybe "onHornetComfortTrigger"?
 end
 
+local function onHornetDies(inst)
+	local x, y, z = inst.Transform:GetWorldPosition()
+	--The 20 is the closeness in units. Not sure what units...
+	local closePlayers = TheSim:FindEntities(x, y, z, 20, {"player"}, {"playerghost", "INLIMBO"}, nil) --currently affects self as well. Could disable for all hornets...
+	-- Check wigfrid for a better implimentation method
+	
+	for i, reciever in ipairs(closePlayers) do
+		print(tostring(inst), " murdered the sanity of ", tostring(reciever))
+		if reciever.components.sanity then
+			reciever.components.sanity:DoDelta(-40.0)
+		end
+	end
+end
 --The End of WIP
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -180,6 +193,7 @@ local master_postinit = function(inst)
     inst.OnNewSpawn = onload
 	inst:ListenForEvent("onattackother", onAttackOther)
 	--inst:ListenForEvent("attacked", OnAttacked)
+	inst:ListenForEvent("death", onHornetDies)
 end
 
 return MakePlayerCharacter("hornet", prefabs, assets, common_postinit, master_postinit, start_inv)
