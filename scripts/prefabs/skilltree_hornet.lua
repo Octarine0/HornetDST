@@ -52,16 +52,16 @@ local function BuildSkillsData(SkillTreeFns)
 
          --Needle
          hornet_needle_damage_1 = {
-            title = "needle Test",
-            desc = "Just a test for now",
+            title = "Needle Handling",
+            desc = "Adds 5% damage to attacks using Hornet's needle.",
             icon = "wolfgang_critwork_1",
             pos = {X + XGAP,Y},
             group = "needle",
-            tags = {"hornet_needle"},
+            tags = {"hornet_needle_1"},
+            onactivate = function(inst, fromload) 
+                inst:PushEvent("hornetDamageChange")
+            end,
             root = true,
-            connects = {
-                "hornet_silk_capacity_2",
-            },
         },
 
         --charms

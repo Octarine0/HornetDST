@@ -147,6 +147,25 @@ local function onHornetDies(inst)
 		end
 	end
 end
+
+local function doDamageCalc(inst)
+	local damageSkillMult = 1.0
+	if inst.components.skilltreeupdater:IsActivated("hornet_needle_damage_1") then
+		if damageSkillMult < 1.05 then
+			damageSkillMult = 1.05
+		end
+	end
+
+	return damageSkillMult
+end
+
+local function needleCheck(inst, damageSkillMult)
+	local heldItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+	if heldItem:HasTag("hornet_needle") then
+		inst.components.combat.externaldamagemultipliers:SetModifier(inst, damageSkillMult, "hornetDamageMod")
+	end
+end
+
 --The End of WIP
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -188,12 +207,40 @@ local master_postinit = function(inst)
 	
 	-- Hunger rate (optional)
 	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
-	
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload
+	local damageSkillMult = 1.0
 	inst:ListenForEvent("onattackother", onAttackOther)
 	--inst:ListenForEvent("attacked", OnAttacked)
 	inst:ListenForEvent("death", onHornetDies)
+	inst:ListenForEvent("hornetDamageChange", function(inst)
+		--damage multiplier with needle
+		damageSkillMult = doDamageCalc(inst)
+		needleCheck(inst, damageSkillMult)
+	end)
+
+	inst:ListenForEvent("equip", function(inst, data)
+		if data.item:HasTag("hornet_needle") then
+			inst.components.combat.externaldamagemultipliers:SetModifier(inst, damageSkillMult, "hornetDamageMod")
+			print("Equiped needle")
+			print(damageSkillMult)
+		end
+	end)
+
+	inst:ListenForEvent("unequip", function(inst, data)
+		if data.item:HasTag("hornet_needle") then
+			inst.components.combat.externaldamagemultipliers:RemoveModifier(inst, "hornetDamageMod")
+		end
+	end)
+	inst:ListenForEvent("dropitem", function(inst, data)
+		if data.item:HasTag("hornet_needle") then
+			inst.components.combat.externaldamagemultipliers:RemoveModifier(inst, "hornetDamageMod")
+		end
+	end)
+	inst:ListenForEvent("playeractivated", function(inst)
+		damageSkillMult = doDamageCalc(inst)
+		needleCheck(inst, damageSkillMult)
+	end)
 end
 
 return MakePlayerCharacter("hornet", prefabs, assets, common_postinit, master_postinit, start_inv)
