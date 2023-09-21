@@ -160,7 +160,7 @@ local function doDamageCalc(inst)
 end
 
 local function needleCheck(inst, damageSkillMult)
-	local heldItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+	local heldItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS) -- potentially better practice to use inst.replica.inventory
 	if heldItem:HasTag("hornet_needle") then
 		inst.components.combat.externaldamagemultipliers:SetModifier(inst, damageSkillMult, "hornetDamageMod")
 	end
