@@ -10,7 +10,7 @@ local ORDERS =
 {
     {"silk",           { -218, Y+TITLE_Y_OFFSET}},
     {"needle",         { -70, Y+TITLE_Y_OFFSET}},
-    {"charms",           { 90, Y+TITLE_Y_OFFSET}},
+    {"beast",           { 90, Y+TITLE_Y_OFFSET}},
     {"allegiance",      { 200, Y+TITLE_Y_OFFSET}}, --void and soul?
 }
 
@@ -65,17 +65,33 @@ local function BuildSkillsData(SkillTreeFns)
         },
 
         --charms
-        hornet_charm_1 = {
-            title = "needle Test",
+        hornet_spider_1 = {
+            title = "Spider Biology 1",
             desc = "Just a test for now",
             icon = "wolfgang_critwork_1",
             pos = {X + XGAP*2,Y},
-            group = "charms",
-            tags = {"hornet_charm"},
+            group = "beast",
+            tags = {"hornet_beast"},
             root = true,
             connects = {
-                "hornet_silk_capacity_2",
+                "hornet_spider_2",
             },
+        },
+        hornet_spider_2 = {
+            title = "Spider Biology 2",
+            desc = "Just a test for now",
+            icon = "wolfgang_critwork_1",
+            pos = {X + XGAP*2,Y-YGAP},
+            group = "beast",
+            tags = {"hornet_beast"},
+        },
+        hornet_beast_1 = {
+            title = "Beast Physiology 1",
+            desc = "Just a test for now",
+            icon = "wolfgang_critwork_1",
+            pos = {X + XGAP*2+30,Y-YGAP},
+            group = "beast",
+            tags = {"hornet_beast"},
         },
         --Affinity
         hornet_void_1 = {
