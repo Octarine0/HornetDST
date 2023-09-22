@@ -83,6 +83,9 @@ local function BuildSkillsData(SkillTreeFns)
             icon = "wolfgang_critwork_1",
             pos = {X + XGAP*2,Y-YGAP},
             group = "beast",
+            onactivate = function(inst, fromload) 
+                inst:PushEvent("hornetSpiderChange")
+            end,
             tags = {"hornet_beast"},
         },
         hornet_beast_1 = {
