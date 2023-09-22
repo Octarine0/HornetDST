@@ -66,6 +66,20 @@ configuration_options =
 		default = 150,
 	},
 	{
+		name = "HORNET_SILK",
+		label = "Hornet's silk stat",
+		options = {
+			{description = "Zote(50)", data = 50},
+			{description = "Much less (80)", data = 80},
+			{description = "Less (90)", data = 90},
+			{description = "Default (100)", data = 100},
+			{description = "More (120)", data = 120},
+			{description = "Much more (150)", data = 150},
+			{description = "Radiant (200)", data = 200},
+		},
+		default = 100,
+	},
+	{
 		name = "HORNET_MOVESPEED",
 		label = "How fast hornet moves",
 		options = {
