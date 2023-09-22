@@ -46,6 +46,7 @@ Assets = {
 
 local SkillTreeDefs = require("prefabs/skilltree_defs")
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
+--silkBadge = require "widgets/silkbadge" --for the silk meter
 
 AddSimPostInit(function()
 	GLOBAL.TheSim:UnloadFont(GLOBAL.TALKINGFONT_HORNET)

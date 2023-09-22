@@ -186,6 +186,9 @@ local common_postinit = function(inst)
 	
 	--Custom speech font
 	inst.components.talker.font = TALKINGFONT_HORNET
+
+	--silk meter stuff
+	inst.silkmeter = net_ushortint(inst.GUID, "silk_meter", "silk_meter_update")
 end
 
 -- This initializes for the server only. Components are added here.
