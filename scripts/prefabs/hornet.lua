@@ -114,7 +114,7 @@ local function applyHornetComfortRange(inst) -- I think this is done
 	-- Check wigfrid for a better implimentation method
 	
 	for i, v in ipairs(closePlayers) do
-		print(tostring(inst), " gave Comforting Aura to ", tostring(v))
+		print(tostring(inst), " gave Comforting Aura to ", tostring(v)) --if inst ~= v for exclusion of self
 		onApplyHornetComfort(v, inst)
 	end
 end
