@@ -139,7 +139,7 @@ if HollowKnightPresent then
 		GHOST = "You were born of the abyss. Now it seems you have returned to it.",
 		FIRESTARTER = "Get that fire started %s.",
 	},
-	--STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = -- all this code doesn't work. Priority registering issue I think. Not sure. Will look in to.
+	--STRINGS.CHARACTERS.HOLLOWKNIGHT.DESCRIBE.HORNET = -- all this code doesn't work. Priority registering issue I think. Not sure. Will look in to. Maybe add post init?
 	--{
 		--GENERIC = "...",
 		--ATTACKER = "...",
