@@ -199,6 +199,18 @@ local CreateSkillTree = function()
 end
 CreateSkillTree();
 
+--silk meter 
+
+local silkbadge  = require "widgets/silkbadge"
+AddClassPostConstruct("widgets/statusdisplays", function(self)
+	if self.owner.prefab ~= 'hornet' then
+		return
+	end
+
+	self.name = self:AddChild(silkbadge(self.owner))
+	self.name:SetPosition(62, 35, 0)
+end)
+
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
 AddModCharacter("hornet", "FEMALE", skin_modes)
 

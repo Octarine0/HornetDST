@@ -9,7 +9,7 @@ local function updateSilk(owner,data) --not sure on this yet
     self.percent = inst.name:value()  / self.num.max
 end
 
-local SilkBadge = Class(Badge, function(self, owner)
+local silkbadge = Class(Badge, function(self, owner)
     Badge._ctor(self, "silk_meter", owner, TINT, "status_wolfgang", nil, nil, true)
 
     self.sanityarrow = self.underNumber:AddChild(UIAnim())
@@ -20,14 +20,16 @@ local SilkBadge = Class(Badge, function(self, owner)
 
     self.val = 100
     self.arrowdir = nil
-    self:UpdateArrow()
+    --self:UpdateArrow()
     owner:ListenForEvent("silk_meter_update", updateSilk())
 end)
 
+function silkbadge:OnUpdate(dt) -- every time it updates i guess
+    self.num:SetString(tostring(math.floor(self.num.current)))
+    self.anim:GetAnimState():SetPercent("anim", 1 - self.percent) 
+end
 
-
-
-function SilkBadge:UpdateArrow()
+function silkbadge:UpdateArrow()
     local anim = self.isfullmoon and self.val > 0 and "arrow_loop_decrease_most" or "neutral"
     if self.arrowdir ~= anim then
         self.arrowdir = anim
@@ -35,10 +37,10 @@ function SilkBadge:UpdateArrow()
     end
 end
 
-function SilkBadge:SetPercent(val, max)
+function silkbadge:SetPercent(val, max)
     Badge.SetPercent(self, val, max)
     self.val = val
     self:UpdateArrow()
 end
 
-return SilkBadge
+return silkbadge
