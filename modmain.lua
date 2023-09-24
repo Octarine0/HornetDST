@@ -207,8 +207,8 @@ AddClassPostConstruct("widgets/statusdisplays", function(self)
 		return
 	end
 
-	self.name = self:AddChild(silkbadge(self.owner))
-	self.name:SetPosition(62, 35, 0)
+	self.silkbadge = self:AddChild(silkbadge(self.owner))
+	self.silkbadge:SetPosition(-62, -52, 0)
 end)
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
