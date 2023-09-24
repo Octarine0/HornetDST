@@ -1,13 +1,10 @@
 local Badge = require "widgets/badge"
 local UIAnim = require "widgets/uianim"
+local Text = require "widgets/text"
+local Widget = require "widgets/widget"
 
 --Constants
 local TINT = { 245/255, 245/255, 245/255, 1 }
-
-local function updateSilk(owner,data) --not sure on this yet
-    self.num.current = inst.name:value()
-    self.percent = inst.name:value()  / self.num.max
-end
 
 local silkbadge = Class(Badge, function(self, owner)
     Badge._ctor(self, "silk_meter", owner, TINT, "status_wolfgang", nil, nil, true)
@@ -21,7 +18,10 @@ local silkbadge = Class(Badge, function(self, owner)
     self.val = 100
     self.arrowdir = nil
     --self:UpdateArrow()
-    owner:ListenForEvent("silk_meter_update", updateSilk())
+    owner:ListenForEvent("silk_meter_update", function(owner,data)
+        self.num.current = inst.name:value()
+        self.percent = inst.name:value()  / self.num.max
+    end)  
 end)
 
 function silkbadge:OnUpdate(dt) -- every time it updates i guess
