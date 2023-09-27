@@ -5,9 +5,20 @@ local Widget = require "widgets/widget"
 
 --Constants
 local TINT = { 245/255, 245/255, 245/255, 1 }
+local assets= -- maybe?
+{
+    Asset("ANIM", "anim/status_silk.zip"),
+}
+
 
 local silkbadge = Class(Badge, function(self, owner)
-    Badge._ctor(self, "silk_meter", owner, TINT, "status_wolfgang", nil, nil, true)
+    Badge._ctor(self, "status_wolfgang", owner, TINT, nil, nil, nil, true)
+
+    self.num = self:AddChild(Text(BODYTEXTFONT, 33))
+    self.num:SetHAlign(ANCHOR_MIDDLE)
+    self.num:SetPosition(-80, -40, 0)
+	self.num:SetClickable(false)
+    self.num:Hide()
 
     self.sanityarrow = self.underNumber:AddChild(UIAnim())
     self.sanityarrow:GetAnimState():SetBank("sanity_arrow")
