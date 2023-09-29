@@ -175,11 +175,11 @@ STRINGS.NAMES.HNEEDLE1 = "Damaged Needle"
 GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE1 = "Looks like a giant needle. Not sure what I'd use it for..."
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE1 = "Damaged, but still functional"
 
-STRINGS.NAMES.HNEEDLE2 = "Repaired Needle"
+STRINGS.NAMES.HNEEDLE2 = "Needle"
 GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE2 = "A giant needle. Not sure what I'd use it for..."
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE2 = "Repaired, but not what it was."
 
-STRINGS.NAMES.HNEEDLE3 = "Restored Needle"
+STRINGS.NAMES.HNEEDLE3 = "Pure Needle"
 GLOBAL.STRINGS.CHARACTERS.GENERIC.DESCRIBE.HNEEDLE3 = "A giant needle. Beautiful, but useless..."
 GLOBAL.STRINGS.CHARACTERS.HORNET.DESCRIBE.HNEEDLE3 = "Restored to it's former glory."
 
