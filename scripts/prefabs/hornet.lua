@@ -14,10 +14,6 @@ local assets = {
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
-	"flint",
-	"flint",
-	"twigs",
-	"twigs",
 	"hneedle1",
 }
 
