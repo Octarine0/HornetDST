@@ -12,9 +12,6 @@ Assets = {
 
     Asset( "IMAGE", "images/selectscreen_portraits/hornet.tex" ),
     Asset( "ATLAS", "images/selectscreen_portraits/hornet.xml" ),
-	
-    Asset( "IMAGE", "images/selectscreen_portraits/hornet_silho.tex" ),
-    Asset( "ATLAS", "images/selectscreen_portraits/hornet_silho.xml" ),
 
     Asset( "IMAGE", "bigportraits/hornet.tex" ),
     Asset( "ATLAS", "bigportraits/hornet.xml" ),
