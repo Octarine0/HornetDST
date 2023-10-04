@@ -10,11 +10,11 @@ prefabs = {}
 
 local function fn()
 
-	local function OnEquip(inst, owner)
+	--[[local function OnEquip(inst, owner)
 		owner.AnimState:OverrideSymbol("swap_object", "swap_hneedle1", "swap_hneedle1")
 		owner.AnimState:Show("ARM_carry")
 		owner.AnimState:Hide("ARM_normal")
-	end   
+	end ]]--
 
 	local function OnUnequip(inst, owner)        
 		owner.AnimState:Hide("ARM_carry")        
