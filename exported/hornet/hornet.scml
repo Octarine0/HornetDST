@@ -97,6 +97,9 @@
         <file id="1" name="headbase_hat/headbase_hat-1.png" width="209" height="282" pivot_x="0.636205" pivot_y="0.0871526"/>
         <file id="2" name="headbase_hat/headbase_hat-2.png" width="215" height="282" pivot_x="0.493023" pivot_y="0.148936"/>
     </folder>
+	<folder id="12" name="SWAP_ICON">
+		<file id="0" name="SWAP_ICON/SWAP_ICON-0.png" width="268" height="244" pivot_x="0.501864" pivot_y="0.514244" />
+	</folder>
     <entity id="0" name="template">
         <animation id="0" name="BUILD_PLAYER" length="1000">
             <mainline>
