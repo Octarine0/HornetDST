@@ -23,17 +23,17 @@ local STRINGS = GLOBAL.STRINGS
 
 STRINGS.NAMES.HORNET = "hornet"
 STRINGS.SKIN_NAMES.hornet_none = "hornet"
-STRINGS.SKIN_DESCRIPTIONS.wadix_none = "The look of a hunter."
+STRINGS.SKIN_DESCRIPTIONS.hornet_none = "The look of a hunter."
 
 STRINGS.CHARACTER_TITLES.hornet = "The Sentinel"
 STRINGS.CHARACTER_NAMES.hornet = "Hornet"
 STRINGS.CHARACTER_DESCRIPTIONS.hornet = "*Possesses a weaponised Needle\n*Moves Fast\n*Is suprisingly sane"
 STRINGS.CHARACTER_QUOTES.hornet = "\"No shadow will haunt me...\""
 STRINGS.CHARACTER_SURVIVABILITY.hornet = "Slim"
-STRINGS.CHARACTER_ABOUTME.hornet = "Sample text."
+STRINGS.CHARACTER_ABOUTME.hornet = "Fill this in."
 STRINGS.CHARACTER_BIOS.hornet = {
- { title = "Birthday", desc = "October 10" },
- { title = "Favorite Food", desc = "Pumpkin Cookies" },
+ { title = "Birthday", desc = "Unknown" },
+ { title = "Favorite Food", desc = "Unknown" },
  { title = "Species", desc = "Spider?"},
 }
 
