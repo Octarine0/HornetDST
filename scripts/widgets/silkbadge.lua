@@ -12,7 +12,7 @@ local assets= -- maybe?
 
 
 local silkbadge = Class(Badge, function(self, owner)
-    Badge._ctor(self, "status_wolfgang", owner, TINT, nil, nil, nil, true)
+    Badge._ctor(self, nil, owner, TINT, nil, nil, nil, true)
 
     self.num = self:AddChild(Text(BODYTEXTFONT, 33))
     self.num:SetHAlign(ANCHOR_MIDDLE)

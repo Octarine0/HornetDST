@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
+	<folder id="0" name="effigy_icon">
+		<file id="0" name="effigy_icon/effigy_icon-0.png" width="76" height="80" pivot_x="0.492105" pivot_y="0.481875" />
+		<file id="1" name="effigy_icon/effigy_icon-1.png" width="45" height="39" pivot_x="0.825556" pivot_y="0.269231" />
+		<file id="2" name="effigy_icon/effigy_icon-2.png" width="45" height="49" pivot_x="0.502222" pivot_y="0.15102" />
+		<file id="3" name="effigy_icon/effigy_icon-3.png" width="37" height="55" pivot_x="-0.0391892" pivot_y="0.309091" />
+		<file id="4" name="effigy_icon/effigy_icon-4.png" width="40" height="44" pivot_x="0.27625" pivot_y="0.880682" />
+		<file id="5" name="effigy_icon/effigy_icon-5.png" width="42" height="45" pivot_x="0.803571" pivot_y="0.826667" />
+		<file id="6" name="effigy_icon/effigy_icon-6.png" width="76" height="53" pivot_x="0.4875" pivot_y="0.210377" />
+		<file id="7" name="effigy_icon/effigy_icon-7.png" width="76" height="76" pivot_x="0.492105" pivot_y="0.451974" />
+	</folder>
+	<folder id="1" name="icon">
+		<file id="0" name="icon/icon-0.png" width="87" height="85" pivot_x="0.49023" pivot_y="0.578529" />
+		<file id="1" name="icon/icon-1.png" width="83" height="82" pivot_x="0.507831" pivot_y="0.576829" />
+		<file id="2" name="icon/icon-2.png" width="76" height="66" pivot_x="0.492763" pivot_y="0.540909" />
+		<file id="3" name="icon/icon-3.png" width="61" height="55" pivot_x="0.515727" pivot_y="0.611818" />
+	</folder>
+	<entity id="0" name="status_silk">
+		<animation id="0" name="effigy_activate" length="367">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.4875" abs_pivot_y="0.210377" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.451974" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="1" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="1" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="effigy_icon">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="6" x="-19.6" y="25.3001" scale_x="0.228171" scale_y="0.181613" angle="29.9993" />
+				</key>
+				<key id="1" time="34" spin="-1">
+					<object folder="0" file="7" x="-23.6" y="29.8001" scale_x="0.405425" scale_y="0.322693" angle="5.66748" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="-24.7" y="40.5501" scale_x="0.37549" scale_y="0.568257" angle="4.02218" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="0" file="0" x="-23.6" y="51.2" scale_x="0.369406" scale_y="0.597566" angle="352.477" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-23.4006" y="46.0156" scale_x="0.376621" scale_y="0.594596" angle="352.946" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-22.5802" y="24.6865" scale_x="0.406303" scale_y="0.582379" angle="354.875" />
+				</key>
+				<key id="6" time="200" spin="1">
+					<object folder="0" file="0" x="-21.0324" y="-15.5585" scale_x="0.46231" scale_y="0.559329" angle="358.513" />
+				</key>
+				<key id="7" time="234" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-31.9999" scale_x="0.485192" scale_y="0.549911" angle="0" />
+				</key>
+				<key id="8" time="267" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-28.678" scale_x="0.493424" scale_y="0.52215" angle="0" />
+				</key>
+				<key id="9" time="300" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26.9589" scale_x="0.497684" scale_y="0.507783" angle="0" />
+				</key>
+				<key id="10" time="334" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26.4" scale_x="0.499069" scale_y="0.503113" angle="0" />
+				</key>
+				<key id="11" time="367" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26.4" scale_x="0.499069" scale_y="0.503113" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="1" name="effigy_deactivate" length="600">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+				<key id="4" time="134">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="4" z_index="1" />
+				</key>
+				<key id="5" time="167">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="5" z_index="1" />
+				</key>
+				<key id="6" time="200">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="6" z_index="1" />
+				</key>
+				<key id="7" time="234">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="7" z_index="1" />
+				</key>
+				<key id="8" time="267">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="8" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="1" />
+				</key>
+				<key id="9" time="300">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="1" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="1" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="9" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="1" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="1" z_index="1" />
+				</key>
+				<key id="10" time="334">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="2" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="2" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="10" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="2" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="2" z_index="1" />
+				</key>
+				<key id="11" time="367">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="3" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="3" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="11" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="3" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="3" z_index="1" />
+				</key>
+				<key id="12" time="400">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="4" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="4" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="12" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="4" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="4" z_index="1" />
+				</key>
+				<key id="13" time="434">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="5" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="5" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="13" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="5" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="5" z_index="1" />
+				</key>
+				<key id="14" time="467">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="6" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="6" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="14" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="6" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="6" z_index="1" />
+				</key>
+				<key id="15" time="500">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.803571" abs_pivot_y="0.826667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="7" z_index="5" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.27625" abs_pivot_y="0.880682" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="7" z_index="4" />
+					<object_ref id="2" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="15" z_index="3" />
+					<object_ref id="3" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="7" z_index="2" />
+					<object_ref id="4" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.825556" abs_pivot_y="0.269231" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="7" z_index="1" />
+				</key>
+				<key id="16" time="534">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="-0.0391892" abs_pivot_y="0.309091" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="16" z_index="2" />
+					<object_ref id="1" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.502222" abs_pivot_y="0.15102" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="8" z_index="1" />
+				</key>
+				<key id="17" time="567" />
+				<key id="18" time="600" />
+			</mainline>
+			<timeline id="0" name="effigy_icon_0">
+				<key id="0" time="0" spin="-1">
+					<object folder="0" file="0" x="-18" y="-26" scale_x="0.499171" scale_y="0.499171" angle="348.18" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-22.1999" y="-26.05" scale_x="0.499433" scale_y="0.499433" angle="5.04512" />
+				</key>
+				<key id="2" time="67" spin="-1">
+					<object folder="0" file="0" x="-19.55" y="-26.05" scale_x="0.499232" scale_y="0.499232" angle="354.385" />
+				</key>
+				<key id="3" time="100" spin="-1">
+					<object folder="0" file="0" x="-16.9001" y="-26.05" scale_x="0.499032" scale_y="0.499032" angle="343.725" />
+				</key>
+				<key id="4" time="134" spin="1">
+					<object folder="0" file="0" x="-20.1" y="-26" scale_x="0.499184" scale_y="0.499184" angle="356.517" />
+				</key>
+				<key id="5" time="167" spin="1">
+					<object folder="0" file="0" x="-23.2999" y="-25.95" scale_x="0.499336" scale_y="0.499336" angle="9.30874" />
+				</key>
+				<key id="6" time="200" spin="-1">
+					<object folder="0" file="0" x="-20.475" y="-25.975" scale_x="0.49914" scale_y="0.49914" angle="356.617" />
+				</key>
+				<key id="7" time="234" spin="-1">
+					<object folder="0" file="0" x="-17.65" y="-26" scale_x="0.498945" scale_y="0.498945" angle="343.926" />
+				</key>
+				<key id="8" time="267" spin="-1">
+					<object folder="0" file="3" x="-15.5" y="-19.1499" scale_x="0.499027" scale_y="0.566758" angle="341.634" />
+				</key>
+				<key id="9" time="300" spin="-1">
+					<object folder="0" file="3" x="-11.85" y="-8" scale_x="0.498953" scale_y="0.498953" angle="326.182" />
+				</key>
+				<key id="10" time="334" spin="-1">
+					<object folder="0" file="3" x="3.8502" y="12.9501" scale_x="0.49855" scale_y="0.49855" angle="301.875" />
+				</key>
+				<key id="11" time="367" spin="-1">
+					<object folder="0" file="3" x="20.6003" y="20.9496" scale_x="0.497896" scale_y="0.497896" angle="276.756" />
+				</key>
+				<key id="12" time="400" spin="-1">
+					<object folder="0" file="3" x="28.4056" y="12.0265" scale_x="0.299333" scale_y="0.299333" angle="268.077" />
+				</key>
+				<key id="13" time="434" spin="-1">
+					<object folder="0" file="3" x="33.7628" y="5.90199" scale_x="0.163048" scale_y="0.163048" angle="262.12" />
+				</key>
+				<key id="14" time="467" spin="-1">
+					<object folder="0" file="3" x="37.343" y="1.809" scale_x="0.071969" scale_y="0.071969" angle="258.14" />
+				</key>
+				<key id="15" time="500" spin="-1">
+					<object folder="0" file="3" x="39.4417" y="-0.590203" scale_x="0.0185807" scale_y="0.0185807" angle="255.806" />
+				</key>
+				<key id="16" time="534" spin="-1">
+					<object folder="0" file="3" x="40.15" y="-1.4" scale_x="0.000560748" scale_y="0.000560748" angle="255.018" />
+				</key>
+			</timeline>
+			<timeline id="1" name="effigy_icon_1">
+				<key id="0" time="267" spin="1">
+					<object folder="0" file="5" x="-24.8001" y="-27.6501" scale_x="0.620395" scale_y="0.498602" angle="25.6953" />
+				</key>
+				<key id="1" time="300" spin="1">
+					<object folder="0" file="5" x="-34.9" y="-33.4" scale_x="0.498633" scale_y="0.498633" angle="41.5811" />
+				</key>
+				<key id="2" time="334" spin="1">
+					<object folder="0" file="5" x="-45.3501" y="-45.5502" scale_x="0.497856" scale_y="0.497856" angle="76.9167" />
+				</key>
+				<key id="3" time="367" spin="1">
+					<object folder="0" file="5" x="-54.3" y="-63.0503" scale_x="0.497131" scale_y="0.497131" angle="107.991" />
+				</key>
+				<key id="4" time="400" spin="1">
+					<object folder="0" file="5" x="-54.5866" y="-71.3854" scale_x="0.259936" scale_y="0.259936" angle="116.112" />
+				</key>
+				<key id="5" time="434" spin="1">
+					<object folder="0" file="5" x="-54.765" y="-76.5735" scale_x="0.112297" scale_y="0.112297" angle="121.166" />
+				</key>
+				<key id="6" time="467" spin="1">
+					<object folder="0" file="5" x="-54.8662" y="-79.5163" scale_x="0.0285536" scale_y="0.0285536" angle="124.034" />
+				</key>
+				<key id="7" time="500" spin="1">
+					<object folder="0" file="5" x="-54.9" y="-80.5" scale_x="0.000558772" scale_y="0.000558772" angle="124.992" />
+				</key>
+			</timeline>
+			<timeline id="2" name="effigy_icon_2">
+				<key id="0" time="267" spin="-1">
+					<object folder="0" file="4" x="-11.6499" y="-26.5" scale_x="0.59627" scale_y="0.498685" angle="332.023" />
+				</key>
+				<key id="1" time="300" spin="-1">
+					<object folder="0" file="4" x="-0.65" y="-30.05" scale_x="0.498722" scale_y="0.498722" angle="309.602" />
+				</key>
+				<key id="2" time="334" spin="-1">
+					<object folder="0" file="4" x="17.5501" y="-41.3002" scale_x="0.498019" scale_y="0.498019" angle="278.799" />
+				</key>
+				<key id="3" time="367" spin="-1">
+					<object folder="0" file="4" x="28.2" y="-57.3503" scale_x="0.497493" scale_y="0.497493" angle="261.462" />
+				</key>
+				<key id="4" time="400" spin="-1">
+					<object folder="0" file="4" x="29.2748" y="-67.62" scale_x="0.260154" scale_y="0.260154" angle="243.808" />
+				</key>
+				<key id="5" time="434" spin="-1">
+					<object folder="0" file="4" x="29.9437" y="-74.0122" scale_x="0.112427" scale_y="0.112427" angle="232.819" />
+				</key>
+				<key id="6" time="467" spin="-1">
+					<object folder="0" file="4" x="30.3232" y="-77.6379" scale_x="0.0286322" scale_y="0.0286322" angle="226.585" />
+				</key>
+				<key id="7" time="500" spin="-1">
+					<object folder="0" file="4" x="30.45" y="-78.85" scale_x="0.000620425" scale_y="0.000620425" angle="224.502" />
+				</key>
+			</timeline>
+			<timeline id="3" name="effigy_icon_3">
+				<key id="0" time="267" spin="1">
+					<object folder="0" file="2" x="-23.75" y="-20.6999" scale_x="0.499451" scale_y="0.592948" angle="0.00875759" />
+				</key>
+				<key id="1" time="300" spin="-1">
+					<object folder="0" file="2" x="-27.1" y="-9.15" scale_x="0.498987" scale_y="0.498987" angle="356.539" />
+				</key>
+				<key id="2" time="334" spin="1">
+					<object folder="0" file="2" x="-28.1001" y="10.5002" scale_x="0.498177" scale_y="0.498177" angle="39.1499" />
+				</key>
+				<key id="3" time="367" spin="1">
+					<object folder="0" file="2" x="-33.6503" y="23.4498" scale_x="0.497954" scale_y="0.497954" angle="81.0388" />
+				</key>
+				<key id="4" time="400" spin="1">
+					<object folder="0" file="2" x="-40.1686" y="18.6402" scale_x="0.340568" scale_y="0.340568" angle="88.552" />
+				</key>
+				<key id="5" time="434" spin="1">
+					<object folder="0" file="2" x="-45.5583" y="14.6633" scale_x="0.210431" scale_y="0.210431" angle="94.7644" />
+				</key>
+				<key id="6" time="467" spin="1">
+					<object folder="0" file="2" x="-49.6993" y="11.6078" scale_x="0.110445" scale_y="0.110445" angle="99.5375" />
+				</key>
+				<key id="7" time="500" spin="1">
+					<object folder="0" file="2" x="-52.5635" y="9.49441" scale_x="0.0412891" scale_y="0.0412891" angle="102.839" />
+				</key>
+				<key id="8" time="534" spin="1">
+					<object folder="0" file="2" x="-54.25" y="8.25" scale_x="0.000568121" scale_y="0.000568121" angle="104.783" />
+				</key>
+			</timeline>
+			<timeline id="4" name="effigy_icon_4">
+				<key id="0" time="267" spin="-1">
+					<object folder="0" file="1" x="-25.3001" y="-25.1499" scale_x="0.577439" scale_y="0.499464" angle="356.597" />
+				</key>
+				<key id="1" time="300" spin="1">
+					<object folder="0" file="1" x="-35.1" y="-20.1" scale_x="0.499026" scale_y="0.499026" angle="358.983" />
+				</key>
+				<key id="2" time="334" spin="1">
+					<object folder="0" file="1" x="-50.8501" y="-14.5" scale_x="0.49801" scale_y="0.49801" angle="20.8024" />
+				</key>
+				<key id="3" time="367" spin="1">
+					<object folder="0" file="1" x="-60.4502" y="-15.8502" scale_x="0.497553" scale_y="0.497553" angle="35.6145" />
+				</key>
+				<key id="4" time="400" spin="1">
+					<object folder="0" file="1" x="-67.1135" y="-20.9611" scale_x="0.260181" scale_y="0.260181" angle="44.4588" />
+				</key>
+				<key id="5" time="434" spin="1">
+					<object folder="0" file="1" x="-71.261" y="-24.1423" scale_x="0.112434" scale_y="0.112434" angle="49.9638" />
+				</key>
+				<key id="6" time="467" spin="1">
+					<object folder="0" file="1" x="-73.6136" y="-25.9468" scale_x="0.0286276" scale_y="0.0286276" angle="53.0863" />
+				</key>
+				<key id="7" time="500" spin="1">
+					<object folder="0" file="1" x="-74.4" y="-26.55" scale_x="0.000611971" scale_y="0.000611971" angle="54.1302" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="2" name="effigy_idle" length="100">
+			<mainline>
+				<key id="0" time="0">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1" />
+				</key>
+				<key id="1" time="34">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="1" z_index="1" />
+				</key>
+				<key id="2" time="67">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="2" z_index="1" />
+				</key>
+				<key id="3" time="100">
+					<object_ref id="0" name="effigy_icon" abs_x="0" abs_y="0" abs_pivot_x="0.492105" abs_pivot_y="0.481875" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="3" z_index="1" />
+				</key>
+			</mainline>
+			<timeline id="0" name="effigy_icon">
+				<key id="0" time="0" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="1" time="34" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="2" time="67" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+				<key id="3" time="100" spin="1">
+					<object folder="0" file="0" x="-20.4" y="-26" scale_x="0.5" scale_y="0.5" angle="0" />
+				</key>
+			</timeline>
+		</animation>
+		<animation id="3" name="frame" length="767">
+			<mainline>
+				<key id="0" time="0" />
+				<key id="1" time="34" />
+				<key id="2" time="67" />
+				<key id="3" time="100" />
+				<key id="4" time="134" />
+				<key id="5" time="167" />
+				<key id="6" time="200" />
+				<key id="7" time="234" />
+				<key id="8" time="267" />
+				<key id="9" time="300" />
+				<key id="10" time="334" />
+				<key id="11" time="367" />
+				<key id="12" time="400" />
+				<key id="13" time="434" />
+				<key id="14" time="467" />
+				<key id="15" time="500" />
+				<key id="16" time="534" />
+				<key id="17" time="567" />
+				<key id="18" time="600" />
+				<key id="19" time="634" />
+				<key id="20" time="667" />
+				<key id="21" time="700" />
+				<key id="22" time="734" />
+				<key id="23" time="767" />
+			</mainline>
+		</animation>
+	</entity>
+</spriter_data>
