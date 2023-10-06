@@ -11,6 +11,7 @@ local assets = {
 --TUNING.HORNET_MOVESPEED = 1.25
 --TUNING.HORNET_DAMAGEMULT = 1
 --TUNING.HORNET_HUNGER_RATE = 1
+--TUNING.HORNET_SANITYAURA = 1
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.HORNET = {
@@ -79,7 +80,7 @@ local function onApplyHornetComfort(receiver, comforter) -- This function seems 
 	if not receiver[comfortAuraUID] then
 		receiver[comfortAuraUID] = receiver:DoPeriodicTask(1.0, function(receiver) -- Number is the interval for aura effect application
 			if receiver.components.sanity then -- To ensure sanity exists on the character. Crash prevention...
-				receiver.components.sanity:DoDelta(0.8 * GLOBAL.HORNET_SANITYAURA) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does receiver.components.sanity:DoDelta(3.0, true)
+				receiver.components.sanity:DoDelta(0.8 * TUNING.HORNET_SANITYAURA) -- Number is the sanity gain per interval. The true prevents the pulsing that food and one-off stuff does receiver.components.sanity:DoDelta(3.0, true)
 			end
 		end)
 	end
