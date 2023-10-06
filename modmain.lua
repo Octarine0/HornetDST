@@ -40,6 +40,9 @@ Assets = {
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 
 AddSimPostInit(function()
+	--if(GetModConfigData("HORNET_FONT") == "enabled") then
+		--return
+	--end
 	GLOBAL.TheSim:UnloadFont(GLOBAL.TALKINGFONT_HORNET)
 	GLOBAL.TheSim:UnloadPrefabs({"hornet_fonts"})
 
@@ -211,4 +214,5 @@ TUNING.HORNET_SANITY = GetModConfigData("HORNET_SANITY")
 TUNING.HORNET_HUNGER = GetModConfigData("HORNET_HUNGER")
 TUNING.HORNET_MOVESPEED = GetModConfigData("HORNET_MOVESPEED")
 TUNING.HORNET_DAMAGEMULT = GetModConfigData("HORNET_DAMAGEMULT")
+TUNING.HORNET_SANITYAURA = GetModConfigData("HORNET_SANITYAURA")
 --TUNING.HORNET_FONT = GetModConfigData("HORNET_FONT")
