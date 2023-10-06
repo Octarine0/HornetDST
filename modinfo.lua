@@ -101,6 +101,21 @@ configuration_options =
 		},
 		default = 1,
 	},
+	{
+		name = "HORNET_SANITYAURA",
+		label = "Strength of Hornet's sanity aura",
+		options = {
+		{description = "None", data = 0},
+		{description = "Very weak", data = 0.25},
+		{description = "Very weak", data = 0.5},
+		{description = "Weak", data = 0.75},
+		{description = "Default", data = 1},
+		{description = "Strong", data = 1.25},
+		{description = "Very Strong", data = 1.5},
+		{description = "Radiant", data = 2},
+		},
+		default = 1,
+	},
 	--{
 		--name = "HORNET_FONT",
 		--label = "Option for enabling or disabling Hornet's custom font.",
