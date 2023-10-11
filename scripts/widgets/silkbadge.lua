@@ -1,19 +1,13 @@
 local Badge = require "widgets/badge"
-local UIAnim = require "widgets/uianim"
-local Text = require "widgets/text"
-local Widget = require "widgets/widget"
+--local UIAnim = require "widgets/uianim"
+--local Text = require "widgets/text"
+--local Widget = require "widgets/widget"
 
 --Constants
 local TINT = { 245/255, 245/255, 245/255, 1 }
-local assets= -- maybe?
-{
-    Asset("ANIM", "anim/status_silk.zip"),
-}
-
 
 local silkbadge = Class(Badge, function(self, owner)
     Badge._ctor(self, nil, owner, TINT, nil, nil, nil, true)
-
     self.num = self:AddChild(Text(BODYTEXTFONT, 33))
     self.num:SetHAlign(ANCHOR_MIDDLE)
     self.num:SetPosition(-80, -40, 0)

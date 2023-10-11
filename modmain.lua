@@ -42,11 +42,17 @@ Assets = {
 	Asset( "IMAGE", "images/hornet_skilltree.tex" ),
     Asset( "ATLAS", "images/hornet_skilltree.xml" ),
 	Asset( "SCRIPT", "scripts/prefabs/skilltree_hornet.lua"),
+
+	Asset("ANIM", "anim/status_silk.zip"),
+	Asset("ANIM", "anim/status_fear.zip"),
+	Asset("ANIM", "anim/status_meter_fear.zip"),
 }
 
 local SkillTreeDefs = require("prefabs/skilltree_defs")
 GLOBAL.TALKINGFONT_HORNET = "talkingfont_hornet"
 --silkBadge = require "widgets/silkbadge" --for the silk meter
+local Badge = require("widgets/badge")
+local UIAnim = require("widgets/uianim")
 
 AddSimPostInit(function()
 	GLOBAL.TheSim:UnloadFont(GLOBAL.TALKINGFONT_HORNET)
@@ -201,14 +207,95 @@ CreateSkillTree();
 
 --silk meter 
 
-local silkbadge  = require "widgets/silkbadge"
+local TINT = { 245/255, 245/255, 245/255, 1 }
+
+--local silkbadge  = require "widgets/silkbadge"
+
+local function OnChangeSilkMeter(inst, data)
+	local maxSilk = inst.components.silk.maxSilk
+	local currentSilk = inst.components.silk.currentSilk
+	if(inst.silkValue:value() ~= currentSilk) then
+		inst.silkValue:set(currentSilk)
+	end
+	if(inst.silkMax:value() ~= maxSilk) then
+		inst.silkMax:set(maxSilk)
+	end
+end
+
 AddClassPostConstruct("widgets/statusdisplays", function(self)
 	if self.owner.prefab ~= 'hornet' then
 		return
 	end
+	self.silkbadge = self:AddChild((Badge(nil, self.owner, TINT, "status_fear")))
+	self.silkbadge.backing:GetAnimState():SetBuild("status_meter_fear")
+	self.silkbadge:Hide() -- Init the meter as hidden?
+	self.silkbadge.num:Show() -- Show the number on the meter
+	local oldOnLoseFocus = self.silkbadge.OnLoseFocus
+	self.silkbadge.OnLoseFocus = function(badge) -- Not sure?
+		oldOnLoseFocus(badge)
+		badge.num:Show()
+	end
 
-	self.silkbadge = self:AddChild(silkbadge(self.owner))
+	--self.owner:ListenForEvent("silk_max_updated", self.owner.UpdateSilkMeterValue)
+	--self.owner:ListenForEvent("silk_value_updated", self.owner.UpdateSilkMeterMax)
+
+	self.owner.UpdateSilkMeterValue = function(inst)
+		local prevValue = self.silkbadge.value
+		self.silkbadge.value = inst.silkValue
+		self.owner.UpdateSilkMeter(prevValue, self.silkbadge.value, self.silkbadge.max)
+	end
+
+	self.owner.UpdateSilkMeterMax = function(inst)
+		self.silkbadge.max = inst.silkMax
+		self.owner.UpdateSilkMeter(self.silkbadge.value, self.silkbadge.value, self.silkbadge.max)
+	end
+
+	self.owner.UpdateSilkMeter = function(currentValue, newValue, maxValue)
+		--self.silkbadge:SetPosition(-62, -52, 0) -- Set the position of the meter icon
+		self.silkbadge:SetScale(self.brain:GetLooseScale()) -- Set the scale of the meter icon
+		self.silkbadge:SetPercent(newValue/maxValue) -- Set the meter current percentage
+		self.silkbadge.num:SetString(GLOBAL.tostring(newValue)) -- Convert the numstore to a string and set the num display
+		--if pulse then
+			--self.fear:PulseRed()
+		--end
+	end
+	self.silkbadge:Show()
 	self.silkbadge:SetPosition(-62, -52, 0)
+	
+end)
+
+local function UpdateClientSilkMax(inst)
+	if GLOBAL.ThePlayer and GLOBAL.ThePlayer.UpdateSilkMeterMax then
+		GLOBAL.ThePlayer.UpdateSilkMeterMax() -- If the value changes update the badge?
+	end
+end
+
+local function UpdateClientSilkValue(inst)
+	if GLOBAL.ThePlayer and GLOBAL.ThePlayer.UpdateSilkMeterValue then
+		GLOBAL.ThePlayer.UpdateSilkMeterValue() -- If the value changes update the badge?
+	end
+end
+
+AddPlayerPostInit(function(inst)
+	if inst.prefab ~= 'hornet' then
+		return
+	end
+	inst.silkMax = GLOBAL.net_int(inst.GUID, "silk_max", "silk_max_updated")
+	inst.silkValue = GLOBAL.net_int(inst.GUID, "silk_value", "silk_value_updated")
+
+	if GLOBAL.TheWorld.ismastersim then
+		inst:ListenForEvent("silk_update", OnChangeSilkMeter)
+		inst:DoTaskInTime(0, function() inst:PushEvent("silk_value_updated",
+			{
+				currenttick = 0
+			}) 
+		end)
+	end
+
+	if not GLOBAL.TheNet:IsDedicated() then
+		inst:ListenForEvent("silk_max_updated", UpdateClientSilkMax)
+		inst:ListenForEvent("silk_value_updated", UpdateClientSilkValue)
+	end
 end)
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
